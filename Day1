@@ -45,3 +45,20 @@ will take time..here we are finding which ssl port can send back password
 
 //difference in two files
 diff file1 file2
+
+
+Revised concepts that I had learnt in TCM Security PEH course:
+
+Networking, addresses, OSI Model, protocols, Subnetting
+Intro to python: basic printing, variables, functions, operators and expressions, list, tuple, dictionaries, loops, importing modules
+Sockets, building basic port scanner
+Basic Linux commands: sudo, mmkdir, rmdir, cd, ls, echo, cp, rm, mv, users and privileges, changing permissions, network commands, cat, nano, installing and updating tools
+Bash scripting very basic program
+5 stages of Ethical Hacking: Info gathering, Scanning and Enumeration, Exploitation, Maintaining Access, Covering Tracks
+
+Info Gathering steps:
+Passive Reconnaissance Overview, Identifying Target, Discovering emails, Gathering Breached Credentials, Hunting Breached Credentials with DEhashed, Hunting Subdomains, identifying website tech
+
+
+
+
