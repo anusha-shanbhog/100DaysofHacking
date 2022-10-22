@@ -57,8 +57,10 @@ Bash scripting very basic program
 5 stages of Ethical Hacking: Info gathering, Scanning and Enumeration, Exploitation, Maintaining Access, Covering Tracks
 
 Info Gathering steps:
-Passive Reconnaissance Overview, Identifying Target, Discovering emails, Gathering Breached Credentials, Hunting Breached Credentials with DEhashed, Hunting Subdomains, identifying website tech
-
-
-
-
+Passive Reconnaissance Overview
+Identifying Target
+Discovering emails
+Gathering Breached Credentials
+Hunting Breached Credentials with Dehashed
+Hunting Subdomains
+Identifying website tech
