@@ -1,7 +1,12 @@
-OvertheWire Bandit challenges 1-15:
+OvertheWire Bandit challenges 1-20:
+
+sudo su root to give root privileges
 
 //ssh
 ssh bandit01@bandit.labs.overthewire.org -p 2220
+ssh bandit01@bandit.labs.overthewire.org -p 2220 cat readme //u can type like this also if it doesnt allow u to login but u want to access stuff
+exit to exit from ssh
+ctrl + c to terminate process
 
 //basic commands
 ls, cat, cd, cat ./-, cat 'file with spaces in name', ls -a
@@ -23,15 +28,20 @@ cat data.txt | rot13
 scp->to transfer data over ssh
 scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .   
 ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220  //to login using private ssh key into ssh
+chmod 700 sshkey.private makes sure onli users have permission
+ls -l filename tells abt permissions
 
 netcat or nc is used to read or write data over a network
 nc localhost 30000
 
 ssl is for secure communication over networks
-echo password_of_current_level | openssl s_client -ign_eof -connect localhost:30001
+echo JQttfApK4SeyHwDlI9SXGR50qclOAil1 | openssl s_client -ign_eof -connect localhost:31790
 
+//port scanning
+nmap: to see which ports are open by default scans top 1000 ports
+nmap -sV localhost -p 31000-32000
+-p is which port or range -sV is for version and service detection -p- -A is to scan all ports 
+will take time..here we are finding which ssl port can send back password
 
-
-
-
-
+//difference in two files
+diff file1 file2
