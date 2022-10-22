@@ -1,0 +1,37 @@
+OvertheWire Bandit challenges 1-15:
+
+//ssh
+ssh bandit01@bandit.labs.overthewire.org -p 2220
+
+//basic commands
+ls, cat, cd, cat ./-, cat 'file with spaces in name', ls -a
+find -readable -nc -owner bandit6 -group bandit7
+cp and mv to copy and move files
+echo is to print 
+
+//piping
+cat data.txt | grep "millionth" >> newfile.txt  //output is redirected to newfile
+cat data.txt | sort | uniq -u
+strings data.txt | grep ===  //for human readable form strings is used
+
+//decoding basics
+cat data.txt base64 -d //base64 decoding  -e =>encoding
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+cat data.txt | rot13
+
+//scp, netcat and ssl
+scp->to transfer data over ssh
+scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .   
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220  //to login using private ssh key into ssh
+
+netcat or nc is used to read or write data over a network
+nc localhost 30000
+
+ssl is for secure communication over networks
+echo password_of_current_level | openssl s_client -ign_eof -connect localhost:30001
+
+
+
+
+
+
