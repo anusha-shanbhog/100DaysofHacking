@@ -14,3 +14,15 @@ bash files end with .sh and are always stored in /usr/bin/filename
 mktemp -d makes temporary directory
 
 stuck!:( in level 24
+
+PicoCTFs
+wget http link to get files from net
+./filename -h works sometimes instead of doing cat
+
+file filename to check extension
+binwalk filename to check if hidden files are there
+strings cat.jpg | grep picoCTF{* to check if that thing is present in file
+hexdump -C cat.jpg gives content in hexadecimal format
+echo cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 | base64 -d //does base 64 encoding
+
+
