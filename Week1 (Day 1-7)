@@ -33,9 +33,11 @@ ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220  //to login u
 chmod 700 sshkey.private makes sure onli users have permission
 ls -l filename tells abt permissions
 
+//netcat
 netcat or nc is used to read or write data over a network
 nc localhost 30000
 
+//ssl
 ssl is for secure communication over networks
 echo JQttfApK4SeyHwDlI9SXGR50qclOAil1 | openssl s_client -ign_eof -connect localhost:31790
 
@@ -48,6 +50,7 @@ will take time..here we are finding which ssl port can send back password
 //difference in two files
 diff file1 file2
 
+
 DAY2:
 
 Revised concepts that I had learnt in TCM Security PEH course:
@@ -59,7 +62,7 @@ Basic Linux commands: sudo, mmkdir, rmdir, cd, ls, echo, cp, rm, mv, users and p
 Bash scripting very basic program
 5 stages of Ethical Hacking: Info gathering, Scanning and Enumeration, Exploitation, Maintaining Access, Covering Tracks
 
-Info Gathering steps:
+//Info Gathering steps:
 Passive Reconnaissance Overview
 Identifying Target
 Discovering emails
@@ -68,8 +71,11 @@ Hunting Breached Credentials with Dehashed
 Hunting Subdomains
 Identifying website tech
 
+
+
 DAY3:
 
+//netcat
 netcat or nc 
 -l is needed to create a listener on server
 -p to speify port 
@@ -78,24 +84,44 @@ netcat or nc
 echo -n 'GbKksEFF4yrVs6il55v6gwY5aVje5f0j' | nc -l -p 1234 & //this sends the passwd to listener on localhost port 1234 and it compares with passwd of prev lvl ,
 if right it send new passwd ..  type.. ./suconnect 1234
 
+//cron
 cron is a time based job scheduler that executes commands at regular intervals chack config in /etc/cron.d
 ls -la /etc/cron.d
 go to bandit 22 bash script open it using cat /usr/bin/cronjob_bandit22.sh and execute those commands
 
+//cron
 bash files end with .sh and are always stored in /usr/bin/filename
 mktemp -d makes temporary directory
 
 stuck!:( in level 24
 
-PicoCTFs
+PicoCTFs-completed 7 basic challenges mostly general track 
+//downloading n checking file types
 wget http link to get files from net
-./filename -h works sometimes instead of doing cat
+./filename -h if it is 64 bit elf executable file no need to to do cat also ull find file type when u do file filename command
 
+//Stegenography:
 file filename to check extension
 binwalk filename to check if hidden files are there
 strings cat.jpg | grep picoCTF{* to check if that thing is present in file
 hexdump -C cat.jpg gives content in hexadecimal format
 echo cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 | base64 -d //does base 64 encoding
+identify -verbose image.png , exif cat.jpg
+install imagemagick and exif tools
+use hexidor like hexer to convert hexadecimal data to text and then decode the text
+
+//decoding using a script in python
+python3 ende.py -d flag.txt.en
+and then enter password to decode flag using python script
+
+strings static | grep pico //extracts and separates strings and human readable data from binary data
+
+//hexadecimal to ascii : echo 0x70 | xxd -r
+
+
+
+
+
 
 
 
