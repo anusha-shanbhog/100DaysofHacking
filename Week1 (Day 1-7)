@@ -117,6 +117,9 @@ and then enter password to decode flag using python script
 strings static | grep pico //extracts and separates strings and human readable data from binary data
 
 //hexadecimal to ascii : echo 0x70 | xxd -r
+//pdf to txt
+sudo apt-get install poppler-utils
+pdftotext hp-manual.pdf hp-manual.txt
 
 
 
