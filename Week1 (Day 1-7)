@@ -122,7 +122,11 @@ sudo apt-get install poppler-utils
 pdftotext hp-manual.pdf hp-manual.txt
 
 
+DAY4 :
+Completed 26 general challenges in picoCTF
 
+
+do overthewire krypton and bandit challenges and learn bash scripting
 
 
 
