@@ -125,8 +125,67 @@ pdftotext hp-manual.pdf hp-manual.txt
 DAY4 :
 Completed 26 general challenges in picoCTF
 
+DAY5:
 
-do overthewire krypton and bandit challenges and learn bash scripting
+Learn about OSINT[Open Source Intelligence]:
+gathering publicly available sources of information about a particular target an attacker
+Without actively engaging the target, the attacker can use the intelligence produced to build a threat model and develop a plan of attack.
+did course from Basel Institute of Governance
+
+DAY6:
+
+Learnt Bash Scripting
+Bash is a scripting language that runs within the terminal on most Linux distros
+Shell scripts are a sequence of bash commands within a file, combined together to achieve more complex tasks than simple one-liner and 
+are especially useful when it comes to automating sysadmin tasks such as backups
+#!/bin/bash
+echo to print
+u can run normal linux commands also
+Chmod +x yourfile.sh //to give permission to execute
+run it using ./filename.sh
+# to write commands
+
+to use variables:
+name="jammy" //no spaces b/w =
+echo $jammy
+
+bash -x ./file.sh  //to debug..if line precedes with + it is right else if - it has error
+insert set -x into your script and set +x to debug a part of it
+
+parameters:
+name=$1
+echo $name ..outputs first parameter ..if $2..outputs 2nd parameter
+read name..echo $name
+$0 gives filename, $# gives no of arguements
+
+arrays:
+transport=('car' 'train' 'bike' 'bus')
+echo "${transport[@]}" //all ele
+echo "${transport[1]}"
+unset transport[1]   //to change or delete an element
+transport[1]='trainride'
+
+conditionals:
+count=10
+if [ count -eq 10 ]     //-eq is equal you can use norml = also
+then                      -gt is greater than ..like that to check conditions
+echo "equal to 10"        -ne is not equal to
+else
+echo "nope"
+fi
+
+to read and write files:   //-f to chk if file exists, -w to check if it is writabel, -r to check it it is readable
+if [ -f "filename" ] && [ -w "filename" ]
+then
+echo "hello" > $filename
+else
+touch "$filename"
+echo "hello" > $filename
+fi
+
+
+
+
 
 
 
