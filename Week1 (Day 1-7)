@@ -58,7 +58,8 @@ Revised concepts that I had learnt in TCM Security PEH course:
 Networking, addresses, OSI Model, protocols, Subnetting
 Intro to python: basic printing, variables, functions, operators and expressions, list, tuple, dictionaries, loops, importing modules
 Sockets, building basic port scanner
-Basic Linux commands: sudo, mmkdir, rmdir, cd, ls, echo, cp, rm, mv, users and privileges, changing permissions, network commands, cat, nano, installing and updating tools
+Basic Linux commands: sudo, mmkdir, rmdir, cd, ls, echo, cp, rm, mv, users and privileges, changing permissions, network commands, 
+cat, nano, installing and updating tools
 Bash scripting very basic program
 5 stages of Ethical Hacking: Info gathering, Scanning and Enumeration, Exploitation, Maintaining Access, Covering Tracks
 
@@ -223,8 +224,36 @@ cats? andre s may or may not be present cat, cats both are shown
 $ - ends with
 I use (nano|vim) ..or operator
 
+DAY7:
+
+Learnt about Cyber Kill Chain: how attackers move through networks to identify vulnerabilities that they can then exploit
+7 stage process: 
+1.Reconnaissance:identifying potential targets,vulnerabilities, discovering which third parties are connected to them 
+(and what data they can access), and exploring existing entry points as well as finding new ones before going to attck
+2.Weaponization: creating new types of malware or modifying existing tools to use in a cyberattack
+3.Delivery: infiltrate a target’s network and reach users by phishing or taking advantage of h/w and s/w vulnerabilities
+4.Exploitation: further infiltrate a target’s network and achieve their objectives, move laterally
+5.Installation: of malvware or cyber kill tool through backdoors, Trojan horse or CLI
+6.Command and Control(C2): communicate with the malware they’ve installed onto a target’s network to instruct cyberweapons or tools to carry
+out their objectives
+7.Actions on Objectives: carrying out their cyberattack objectives like weaponizing a botnet to interrupt services with a Distributed Denial
+of Service (DDoS) attack, distributing malware to steal sensitive data from a target organization, and using ransomware as a cyber extortion tool
 
 
+Some basic terms:
+-backdoor is any sort of method which allows any organization, hacker, or even government to access your system without your permission
+-Firewalls carefully analyze incoming traffic based on pre-established rules and filter traffic coming from unsecured or suspicious sources to 
+prevent attacks. Firewalls guard traffic at a computer’s entry point, called ports, which is where information is exchanged with external devices.
+-Trojan
+-A firewall is a security network designed to protect computer systems and networks from malicious attacks.
+-Antivirus is is a software utility program designed to protect a system from internal attacks from viruses, trojan horse, spyware, cannot check read-only files
+
+-virus: computer program that connect itself to another software or computer program to harm computer system, can replicate, not controlled by remote, executed via 
+executable files, main purpose to modify info, spreads at moderate rate
+-worms: Worms replicate itself to cause slow down the computer system., can replicate, controlled by remote, executed via 
+weaknesses in system, main purpose to eat system resources and slow down system, spreads at fast rate
+-trojan: rather than replicate capture some important information about a computer system or a computer network, can't replicate, controlled by remote, 
+executes through a program and interprets as utility software, main purpose to steal info, spreads at slow rate
 
 
 
