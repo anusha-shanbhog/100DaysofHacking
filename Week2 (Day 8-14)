@@ -9,5 +9,8 @@ Also leant TMUX tool.
 
 
 Day 9:
-Learn to use Metasploit, Burpsuite and Hashcat.
-Checkout OWASP Top10 on portswigger .
+Learnt about different cryptographic algos, caesar, vignere ciphers, morse code, dec, hex, ascii, base32,base64
+encoding and how to use them. solved 15 cryptography and 5 forensic challenges on pcio. Solved n completed krypton challenges
+on overthewire. Great going!!:)
+also studied symm n asymm encryption using public n pvt key.yet to learn rsa, aes those kinds of encryption n also hashing,
+salting..etc..
