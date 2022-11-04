@@ -14,3 +14,17 @@ encoding and how to use them. solved 15 cryptography and 5 forensic challenges o
 on overthewire. Great going!!:)
 also studied symm n asymm encryption using public n pvt key.yet to learn rsa, aes those kinds of encryption n also hashing,
 salting..etc..
+
+Day 10:
+Learnt about digital fornsics-investing crimes with digital evidence.Acquire evidence safely, chain of custody, transport to lab, make a 
+copy and work on copy and process it.
+pdfinfo document.pdf ..to find metadata in pdf
+EXIF stands for Exchangeable Image File Format; it is a standard for saving metadata to image
+exiftool image.jpg  ..to find meta data in image
+
+Wireshark is an open-source, cross-platform network packet analyser tool capable of sniffing and investigating live traffic and inspecting packet captures (PCAP)
+It only allows analysts to discover and investigate the packets in depth.
+go to statistics, capture file data to see details abt pcap file
+double click on packet to see osi model details
+u can navigate to packets, mark/colour/comment them, export certain objects/packets, view in time format, filter packets, follow stream, extract 
+certain files and analyze them! :)
