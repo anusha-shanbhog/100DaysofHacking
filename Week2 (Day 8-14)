@@ -95,8 +95,13 @@ nmap -T4 -p- -A <ip address> -v
  sent to victim, to attempt to get a shell on a machine
  non staged payload:large, sends exploit shell code all at once, wont work always like meterpreter_reverse_tcp
  staged:sends payload in stages, less stable extra / like meterpreter/reverse_tcp
+ u can do exploitation using metasploit or manually using openluck (download frm github.. and see related steps n mannual pg n go on)
  
  brute force attcks: hydra -l root -P /usr/share/wordlists/metasploit/filename.txt ssh ://192.120185.24:22 -t 4 -V ...4 threads port22, verbose mode, root username
  or u can search in metasploit: ssh,ssh_login,options,set pass_file /path , set rhosts <ip> , options to see all set, set threads 10, set verbose true, run
 
 credential stuffing:injecting breached account credentials in hope of account takeover
+
+Day 12:
+learn OWASP top 10 from peh course and practice labs related to those on thm.
+
