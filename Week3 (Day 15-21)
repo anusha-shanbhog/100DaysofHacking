@@ -17,3 +17,12 @@ passive recon: whois: to get info abt website, dig, nslookup for dns servers , d
 Day 16:
 got selected for CyberSecurity and Digital Forensics Internship program in Cyber Secured India
 did week1 ka stuff..windows,linux and networking fundamentals..
+
+Day 17: 
+learnt to execute elf files ./filename
+ltrace ./filename to see library calls
+strace ./filename to see system calls
+using && to mainpulate data in elf files..
+solved leviathan challenge in overthewire
+
+plan: finish all overthewire challhenges and concepts by this week end..in another 3-4 days
