@@ -112,3 +112,8 @@ an API that runs on the host operating system,which communicates between the ope
  be running as a new namespace, although the container may be running multiple applications (and in turn, processes).
                            
 
+WifiHacking101: use aircrack-ng -a2 -b 02:1A:11:FF:D9:BD -w /usr/share/wordlists/rockyou.txt NinjaJc01–01.cap to extract from file n find password 
+use man pg to find any othr related details for this command
+this is when the capture is given
+
+
