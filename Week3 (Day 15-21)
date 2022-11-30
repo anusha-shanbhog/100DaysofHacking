@@ -100,5 +100,15 @@ steps in buffer overflow: spiking:find vuln part of pgm
                            using offset to overwrite eip
                            cleanup:finding right char, module
                            generate malicious shell code to get rev shell n pt eip to get root
+  
+Solved a TryHackMe room | Intro to containerisation: learnt about containerisation, why its done, containers, docker
+containerisation is the process of packaging an application and the necessary resources (such as libraries and packages) required into one package named a container.
+The process of packaging applications together makes applications considerably portable and hassle-free to run.packaging the dependencies together and “isolating”
+saves disk space no need to install vms
+containerisation platforms make use of the “namespace”
+Docker employs the same technology used in containerisation to isolate applications into containers called the Docker Engine. The Docker Engine is essentially
+an API that runs on the host operating system,which communicates between the operating system and containers to access the system’s hardware..uses YAML syntax
+ Processes can only "see" other processes that are in the same namespace - no conflicts in theory. Take Docker, for example, every new container will 
+ be running as a new namespace, although the container may be running multiple applications (and in turn, processes).
                            
 
