@@ -54,7 +54,8 @@ to write: open('days.txt',"w"), days.write("Monday")
 classes n objects
 def_init(self,...), self.price, if not(isinstance(...))
 
-Day 19:, used the decoded one to open file to get flag
+Day 19:[29-11-2022]
+, used the decoded one to open file to get flag
 Did the following rooms on thm:
 TheImpossibleChallenge: downloaded zip file to crack password..took that string, did rot13,rot47,hex, base 64, went to developers tools, found a text
 used it in Unicode zero-width characters steg, used the decoded one to open file to get flag
@@ -81,7 +82,7 @@ Fowsniff CTF: Identifying target host by using the Netdiscover utility
 in tmp do id, cat /root/flag to get flag
 
 
-Day 20:
+Day 20:[30-11-2022]
 Nessus: vulnerability scanner 
 go to their website n download unfortunately no disk space
 its like an automated tool and u mark all checkboxes it tries to scan and show version of all top vulnerabilities on its own n then u can click on each n see
@@ -117,3 +118,22 @@ use man pg to find any othr related details for this command
 this is when the capture is given
 
 
+Day 21:[02-12-2022]
+Started advent of cyber 2022
+Learnt about security frameworks:
+1.NSIT[National Institute of Standards and Technology]:Identify,Protect,Detect,Respond,Recover
+2.ISO 27000 Series:These standards can be used to assess an institution’s ability to meet set information security requirements
+through the application of risk management
+3.MITRE ATT&CK Framework:Tactics, Techniques and Procedures (TTPs)
+4.Cyber Kill Chain:Recon,Weaponization,Delivery,Exploitation,Installation,Command and control,Actions on objectives
+5.Unified Kill Chain:3 cycles:In,Through,Out
+
+About log files:
+Log files are files that contain historical records of events and other data from an application
+help to know about Login attempts or failures,Traffic on a network,Things (website URLs, files, etc.) that have been accessed,Password changes,Application errors
+Log file contains A timestamp of the event (I.e. Date & Time)
+The name of the service that is generating the logfile (I.e. SSH is a remote device management protocol that allows a user to login into a system remotely)
+The actual event the service logs (i.e., in the event of a failed authentication, what credentials were tried, and by whom? (IP address)).
+Located in /var/log
+Tools such as Splunk are software solutions known as Security Information and Event Management (SIEM) is dedicated to aggregating logs for analysis.
+use grep to find something in log files: -i case insensitive, -E reg exp, -r search recursively
