@@ -1,0 +1,15 @@
+Day 22:[03-12-2022]
+
+Completed boiler ctf on tryhackme :)) xDD
+did enumeration, and basic exploitation, command injection vuln and changed permissions n did priv esc.
+
+Completed Agent sudo another ctf on tryhackme
+in this i learnt to crack ftp password using hydra, change useragent n try to view site using burpsuite, mget to download all files, exiftool, binwalk, steghide
+xxd cutie.png to convert img to hexdummp
+binwalk -e cutie.png to extract
+zip2john 8702.zip > hash.txt, john hash.txt, 7z e 8702.zip
+steghide extract -sf cute-alien.jpg
+sudo scp james@<target ip>:Alien_autospy.jpg ~/ ...to copy img frm ssh to device, rev img search
+sudo -l to see wht priv a user has
+then google to find cve 
+sudo -u#-1 /bin/bash..then go to root directory n find flag!!!xp
