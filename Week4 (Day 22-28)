@@ -43,3 +43,6 @@ components of AD:physical:domain controller:head of all servers,hosts phonebook,
  Web application revisited: some more extra tools using Go language
  used to use sublister to find subdomains..now u can use assetfinder
  assetfinder domain name like assetfinder --subs-only tesla.com 
+ gedit run.sh
+ create a bash script to store it into a particular file in a directory
+ 
