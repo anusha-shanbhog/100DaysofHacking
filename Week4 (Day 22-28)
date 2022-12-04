@@ -16,3 +16,30 @@ sudo -u#-1 /bin/bash..then go to root directory n find flag!!!xp
 hacking is fun ..hehe
 
 Did LazyAdmin room on thm ..need to learn exploitation, rev shell n priv esc properly
+
+Day 23:[04-12-2022]
+Spiking:take a cmd eg: stats n do buffer overflow if sys crashes it means tht is vulnerable
+enter cmds in vuln server
+fuzzing:sending a bunch of char to a cmd n try to brk it..in spiking u do it to multiple cmds simultaneously in fuzzing its one particular cmd like trunk
+some script n module ull hav to import
+Finding offset: looking for where to write eip
+patterncreate already existing tool for this by metasploit
+/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 3000
+overwrite eip ahhh idk im not understanding anything
+this is some buffer overflow stuff nthng makes sense all mpmc bullshit
+learn buffer overflow properly someday lol
+
+Active directory:(imp ante)..used in many companies for identity mgmt
+activ direc: like a phonebook storung info like objects like comp, user, printer ..used by windows, directory is called services
+eg: login ge u need username pswd in diff places same ones are used ..u can authenticate arnd network using kerberos
+components of AD:physical:domain controller:head of all servers,hosts phonebook, has all info, provides auth,
+                          data store: contains pswd, hashed, ntds.dit file, accessible onli thr dom controller processes
+                       
+                  logical:AD schema: rulesbook, def of all objects
+                          domains: to gp n manage objects in organisation
+                          tree:gp of domains, forest: collection of trees
+                          trusts, objects
+                          
+ Web application revisited: some more extra tools using Go language
+ used to use sublister to find subdomains..now u can use assetfinder
+ assetfinder domain name like assetfinder --subs-only tesla.com 
