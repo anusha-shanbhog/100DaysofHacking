@@ -46,3 +46,25 @@ components of AD:physical:domain controller:head of all servers,hosts phonebook,
  gedit run.sh
  create a bash script to store it into a particular file in a directory
  
+ Day 24:[05-12-22]
+ to strt service in linu: sudo service apache2 start/stop
+ sudo systemctl disable ssh
+ Wireless pentest: assesment of wireless network..learn frm blogposts
+ WPA2 PSK(pre share key):normal manedu..with passwd
+ WPA2 enterprise: credentials, more advanced environment
+ we'll do psk one: 
+ activities performed:eval strength of psk,reviewing nearby networks,assessing guest networks,chking network access
+ tools used:wireless card-to injcet n listen to pkts,router not connected to net, laptop connected to router
+ watch tht video in peh to see live wifi hacking..first connect device, find bssid of n/w, use wordlists n aircrack-ng to hack the passwd
+ process: place card into monitor mode,discover channel,bssid abt network,select n/w n capture data,perform deauth attack,capture wpa handshake,
+ attempt to crk handshake
+ 
+ extra enumeration tools:
+ amass-finding subdomains, go tool
+ httprobe to find alive domains..cat filename | httprobe -s -p https:443 =>port 443 li yavdella active ide antha ur chking
+ GoWitness to screenshot websites..gowitness single https://tesla.com
+ 
+ https://github.com/thatonetester/sumrecon
+ https://pastebin.com/MhE6zXVt.. these two to automate enumeration process
+ 
+ 
