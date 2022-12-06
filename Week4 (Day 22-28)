@@ -87,4 +87,31 @@ components of AD:physical:domain controller:head of all servers,hosts phonebook,
  
  using Remmina to connect to VNC server..in vnc no username
  
+ OWASP TOP 10:
+ Lezgooo
+ 1.Injection attack:These flaws occur because user controlled input is interpreted as actual commands or parameters by the application.
+ SQL Injection: This occurs when user controlled input is passed to SQL queries. As a result, an attacker can pass in SQL queries to manipulate
+ the outcome of such queries. 
+ Command Injection: This occurs when user input is passed to system commands. As a result, an attacker is able to execute arbitrary system commands
+ Defence: Allow list[allowing onli safe input by comparing with set of char], Stripping input[dangerous char r removed frm input bfor processing]
+ Command Injection occurs when server-side code (like PHP) in a web application makes a system call on the hosting machine.  It is a web vulnerability that allows an\
+ attacker to take advantage of that made system call to execute operating system commands on the server. 
+ on application servers.
+ ;nc -e /bin/bash to do reverse shell
+ 
+ 2.Broken Authentication:
+ Session cookies are how the server keeps track of users
+ Strong passwd, strong session cookies that cant be predictable, brute force attacks
+ defence:strong passwd, automatic lockout after certain no of attempts,multi factor authentication
+ eg:register with same username like admin again n view everything with username n passwd by logging in
+ 
+ 3.Sensitive data exposure:This is often data directly linked to customers (e.g. names, dates-of-birth, financial information, etc),
+ but could also be more technical information, such as usernames and passwords.Also includes man in the middle attacks where attacker would force user
+ connections through a device which they control, then take advantage of weak encryption on any transmitted data to gain access to the intercepted information
+ flat-file database:db stored in file in sys instead of servers to reduce storage size but it can be accessed n hacked n sensitive ifo can be exposed eg:sqlite db
+ sqlite3 <database-name>, .tables, .help, PRAGMA table_info(customers); , SELECT * FROM customers; 
+ do this to find db, see usernames n passwds and login after cracking hashes
+ 
+ 4.XML External Entity:
+ 
  
