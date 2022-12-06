@@ -67,4 +67,24 @@ components of AD:physical:domain controller:head of all servers,hosts phonebook,
  https://github.com/thatonetester/sumrecon
  https://pastebin.com/MhE6zXVt.. these two to automate enumeration process
  
+ Day 25:[06-12-2022]
+ Doing advent of cyber day5
+ Remote Access Services:
+ SSH stands for Secure Shell. It was initially used in Unix-like systems for remote login. It provides the user with a command-line interface 
+ (CLI) that can be used to execute commands.
+
+ RDP stands for Remote Desktop Protocol; it is also known as Remote Desktop Connection (RDC) or simply Remote Desktop (RD). 
+ It provides a graphical user interface (GUI) to access an MS Windows system.
+ When using Remote Desktop, the user can see their desktop and use the keyboard and mouse as if sitting at the computer.
+
+ VNC stands for Virtual Network Computing. It provides access to a graphical interface which allows the user to view the desktop and (optionally)
+ control the mouse and keyboard. VNC is available for any system with a graphical interface, including MS Windows, Linux, and even macOS, Android and Raspberry Pi.
+
+ Authentication refers to the process where a system validates your identity.
+ Password attacks:Shoulder Surfing,Password Guessing,Dictionary Attack,Brute Force Attack
+ hydra -l mark -P /usr/share/wordlists/rockyou.txt ssh://10.10.2.131 ..mark is username bruteforce attack
+ You can replace ssh with another protocol name, such as rdp, vnc, ftp, pop3 or any other protocol supported by Hydra.
+ 
+ using Remmina to connect to VNC server..in vnc no username
+ 
  
