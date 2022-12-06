@@ -113,5 +113,35 @@ components of AD:physical:domain controller:head of all servers,hosts phonebook,
  do this to find db, see usernames n passwds and login after cracking hashes
  
  4.XML External Entity:
+ An XML External Entity (XXE) attack is a vulnerability that abuses features of XML parsers/data. It often allows an attacker to interact with any backend or external 
+ systems that the application itself can access and can allow the attacker to read the file on that system
+ 1) An in-band XXE attack is the one in which the attacker can receive an immediate response to the XXE payload.
+ 2) out-of-band XXE attacks (also called blind XXE), there is no immediate response from the web application and 
+ attacker has to reflect the output of their XXE payload to some other file or their own server.
  
+ XML (eXtensible Markup Language) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and
+ machine-readable. It is a markup language used for storing and transporting data. 
+ xml code starts with prolog <?xml ...encoding..>
+ DTD stands for Document Type Definition. A DTD defines the structure and the legal elements and attributes of an XML document..used to define n validate xml 
+ uses !doctype for root ele, !element for element and so on..
  
+ eg: <?xml version="1.0"?>
+<!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
+<root>&read;</root>
+using this payload extracts contents of /etc/passwd by using system n file path puts it into read n displays it on screen
+learn by doing payloads properly practical agi..
+
+5.Broken Access Control:
+To put simply, broken access control allows attackers to bypass authorization which can allow them to view sensitive data
+or perform tasks as if they were a privileged user.
+eg:Scenario #2: An attacker simply force browses to target URLs. Admin rights are required for access to the admin page
+Scenario #1: The application uses unverified data in a SQL call that is accessing account information:
+pstmt.setString(1, request.getParameter("acct"));
+ResultSet results = pstmt.executeQuery( );
+
+An attacker simply modifies the ‘acct’ parameter in the browser to send whatever account number they want.
+If not properly verified, the attacker can access any user’s account.
+http://example.com/app/accountInfo?acct=notmyacct
+ 
+IDOR, or Insecure Direct Object Reference, is the act of exploiting a misconfiguration in the way user input is handled,
+to access resources you wouldn't ordinarily be able to access. IDOR is a type of access control vulnerability.
