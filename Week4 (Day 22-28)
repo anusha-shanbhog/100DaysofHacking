@@ -203,3 +203,46 @@ re-entrancy occurs when a malicious contract uses a fallback function to continu
 logic after an initial withdraw function occurs
 
 Do agent T and Quotient rooms
+
+Day 28:[17-12-22]..couldnt do for a week coz of internals n pb test n all
+Advent of cyber contd.
+Day 15 n 16:Secure coding
+Input validation:input or files uploaded hav to be validated sumne eladinu allow madidre it can lead to vulnerabilities
+Unrestricted File Uploads usually have two main exploitation paths:
+
+If the attacker can retrieve the uploaded file, it could lead to code execution if the attacker uploads a file such as a web shell.
+If the file is viewed by a user, think of a CV application, then an attacker could embed malware in the uploaded file that would
+execute on the user's workstation once they view the file.
+
+in this onli pdf files are allowed to be added n not exe files
+.net applictaion allows asp,aspx,cshtml to be executed after running a set of instructions so in this u can add of reverse shell code
+If this file was stored in the web root, we could request the file from the server, forcing the server to execute the code within our 
+file before sending the response. It would be possible to get remote code execution on the web server. 
+
+file extension validation has to be done n file renaming n malicious code cn be prevented by malware scanning by using clamAV or else u can upload a payload, 
+establish reverse shell n gain access using metasploit easily.
+
+SQLi:
+$server="db";
+$user="logistics_user";
+$pwd="somePass123";
+$schema="logistics";
+
+$db=mysqli_connect($server,$user,$pwd,$schema);
+to establish php connection to sql
+$query="select * from users where id=1";
+$elves_rs=mysqli_query($db,$query);
+
+$query="select * from users where id=".$_GET['id'];
+$elves_rs=mysqli_query($db,$query);
+to fetch data but this is sqli
+eg: in url onli u can put where id=-1 or id=4 itll convert into sql query and dispaly id 4 ka contents
+intval() function. This function will take a string and try to convert it into an integer. If no valid integer is found on the string, it will return 0,
+$query="select * from users where id=".intval($_GET['id']);
+That way, even if the attacker sends an SQL injection payload via the id parameter, the app will try converting it to an integer before 
+concatenating it as part of the SQL statement. In the worst-case scenario, the string gets converted to a 0, which is still harmless in this particular case.
+$stmt = mysqli_prepare($db, $query); mysqli_stmt_bind_param(); instead of blindly concatenating strings, it chks if it shud allow parameters to be bound or not
+sqli fix madad kaltko do those port swigger stuff
+
+
+
