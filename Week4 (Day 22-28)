@@ -244,5 +244,7 @@ concatenating it as part of the SQL statement. In the worst-case scenario, the s
 $stmt = mysqli_prepare($db, $query); mysqli_stmt_bind_param(); instead of blindly concatenating strings, it chks if it shud allow parameters to be bound or not
 sqli fix madad kaltko do those port swigger stuff
 
+completed till 24th dec, advent of cyber'22 done!
 
-
+took a brk.. learn basic concepts in dev like api's, protocols, servers,sockets, docker, container n all..n do some related project
+try applying for gsoc..decide org n all..will continue in march'23.
